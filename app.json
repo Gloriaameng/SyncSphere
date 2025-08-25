@@ -1,0 +1,58 @@
+{
+  "pages": [
+    "pages/taboptions/schedule/schedule",
+    "pages/taboptions/group/group",
+    "pages/taboptions/mine/mine",
+    "pages/events/events",
+    "pages/time-marking/time-marking",
+    "pages/match-results/match-results",
+    "pages/activePage/newActivity/newActivity",
+    "pages/activePage/fillInIdleTime/fillInIdleTime",
+    "pages/activePage/checkAndConfirm/checkAndConfirm"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTitleText": "智能日程协调",
+    "navigationBarTextStyle": "black"
+  },
+  "lazyCodeLoading": "requiredComponents",
+  "componentPlaceholder": {
+    "time-slot": "view",
+    "participant-avatar": "view"
+  },
+  "requiredPrivateInfos": [
+    "getLocation"
+  ],
+  "permission": {
+    "scope.userInfo": {
+      "desc": "用于完善活动参与者信息"
+    },
+    "scope.userLocation": {
+      "desc": "用于获取活动地点信息"
+    }
+  },
+  "tabBar": {
+    "selectedColor": "#f4ea2a",
+    "color": "#00000",
+    "list": [
+      {
+        "pagePath": "pages/taboptions/schedule/schedule",
+        "iconPath": "images/icons/schedule.png",
+        "selectedIconPath": "images/icons/schedule-active.png",
+        "text": "日程"
+      },
+      {
+        "pagePath": "pages/taboptions/mine/mine",
+        "iconPath": "images/icons/profile.png",
+        "selectedIconPath": "images/icons/profile-active.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "requiredBackgroundModes": [
+    "share"
+  ],
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
